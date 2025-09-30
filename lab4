@@ -1,0 +1,27 @@
+[13:47, 30.09.2025] Мирас: # Исходный список
+lst = [1, 2, 3, 4, 5]
+
+# Способ 1 — срезом
+reversed_lst = lst[::-1]
+print("Обратный порядок (срез):", reversed_lst)
+
+# Способ 2 — встроенной функцией
+lst.reverse()
+print("Обратный порядок (reverse):", lst)
+[13:47, 30.09.2025] Мирас: def list_sort(lst):
+    return sorted(lst, key=abs, reverse=True)
+
+# Пример
+numbers = [3, -7, 1, -4, 10]
+print("Исходный список:", numbers)
+print("Сортировка по убыванию |x|:", list_sort(numbers))
+[13:47, 30.09.2025] Мирас: def change(lst):
+    lst[0], lst[-1] = lst[-1], lst[0]
+    return lst
+
+# Пример
+nums = [1, 2, 3, 4, 5]
+print("Исходный список:", nums)
+print("После замены:", change(nums))
+[13:47, 30.09.2025] Мирас: Исходный список: [1, 2, 3, 4, 5]
+После замены: [5, 2, 3, 4, 1]
