@@ -1,0 +1,11 @@
+text = input("Введите строку: ")
+print("Длина строки:", len(text))
+text = input("Введите строку: ")
+vowels = "аеёиоуыэюяAEЁИОУЫЭЮЯ"
+count = sum(1 for ch in text if ch in vowels)
+print("Количество гласных:", count)
+text = input("Введите строку: ")
+if text == text[::-1]:
+    print("Это палиндром")
+else:
+    print("Не палиндром")
